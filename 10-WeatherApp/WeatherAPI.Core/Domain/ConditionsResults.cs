@@ -19,5 +19,6 @@ namespace WeatherAPI.Core.Domain
         public string precip_today_string { get; set; }
         public string observation_time { get; set; }
         public string icon_url { get; set; }
+        public string icon { get; set; }
     }
 }

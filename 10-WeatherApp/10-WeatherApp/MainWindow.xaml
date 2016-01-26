@@ -9,20 +9,21 @@
     <Grid>
         <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" Margin="406,65,0,0" VerticalAlignment="Top" Width="75" Click="searchButton_Click"/>
         <TextBox x:Name="zipcodeEntryBox" HorizontalAlignment="Left" Height="23" Margin="361,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="cityBlock" HorizontalAlignment="Left" Margin="163,15,0,0" TextWrapping="Wrap" Text="cityBlock" VerticalAlignment="Top" Height="31" Width="132"/>
-        <Label x:Name="label" Content="Enter Zipcode" HorizontalAlignment="Left" Margin="361,10,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="91" Margin="22,14,0,0" TextWrapping="Wrap" Text="ImagePlaceHolder" VerticalAlignment="Top" Width="110"/>
-        <TextBlock x:Name="latLongBlock" HorizontalAlignment="Left" Margin="163,37,0,0" TextWrapping="Wrap" Text="latLongBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="weatherBlock" HorizontalAlignment="Left" Margin="22,149,0,0" TextWrapping="Wrap" Text="weatherBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="elevationBlock" HorizontalAlignment="Left" Margin="163,59,0,0" TextWrapping="Wrap" Text="elevationBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="temperatureBlock" HorizontalAlignment="Left" Margin="22,170,0,0" TextWrapping="Wrap" Text="temperatureBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="feelsLikeBlock" HorizontalAlignment="Left" Margin="20,191,0,0" TextWrapping="Wrap" Text="feelsLikeBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="windBlock" HorizontalAlignment="Left" Margin="22,212,0,0" TextWrapping="Wrap" Text="windBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="humidityBlock" HorizontalAlignment="Left" Margin="275,149,0,0" TextWrapping="Wrap" Text="humidityBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="visibilityBlock" HorizontalAlignment="Left" Margin="275,173,0,0" TextWrapping="Wrap" Text="visibilityBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="uvBlock" HorizontalAlignment="Left" Margin="275,199,0,0" TextWrapping="Wrap" Text="uvBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="percepBlock" HorizontalAlignment="Left" Margin="275,228,0,0" TextWrapping="Wrap" Text="perceplock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="lastUpdateBlock" HorizontalAlignment="Left" Margin="328,285,0,0" TextWrapping="Wrap" Text="lastUpdateBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="cityBlock" HorizontalAlignment="Left" Margin="167,23,0,0" TextWrapping="Wrap" Text="City/State:" VerticalAlignment="Top" Height="22" Width="132" FontWeight="Bold"/>
+        <Label x:Name="label" Content="Enter US Zipcode" HorizontalAlignment="Left" Margin="361,10,0,0" VerticalAlignment="Top" Width="120" FontWeight="Bold"/>
+        <TextBlock x:Name="latBlock" HorizontalAlignment="Left" Margin="167,47,0,0" TextWrapping="Wrap" Text="Latitude:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="weatherBlock" HorizontalAlignment="Left" Margin="11,121,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="126" FontWeight="Bold"/>
+        <TextBlock x:Name="elevationBlock" HorizontalAlignment="Left" Margin="167,97,0,0" TextWrapping="Wrap" Text="Elevation:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="temperatureBlock" HorizontalAlignment="Left" Margin="92,166,0,0" TextWrapping="Wrap" Text="Temperature:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="feelsLikeBlock" HorizontalAlignment="Left" Margin="92,193,0,0" TextWrapping="Wrap" Text="Feels like:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="windBlock" HorizontalAlignment="Left" Margin="92,219,0,0" TextWrapping="Wrap" Text="Wind:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="humidityBlock" HorizontalAlignment="Left" Margin="315,171,0,0" TextWrapping="Wrap" Text="Humidity:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="visibilityBlock" HorizontalAlignment="Left" Margin="315,196,0,0" TextWrapping="Wrap" Text="Visibility:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="uvBlock" HorizontalAlignment="Left" Margin="315,222,0,0" TextWrapping="Wrap" Text="UV:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="precepBlock" HorizontalAlignment="Left" Margin="91,247,0,0" TextWrapping="Wrap" Text="Precipitation:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="lastUpdateBlock" HorizontalAlignment="Left" Margin="275,293,0,0" TextWrapping="Wrap" Text="Last update:" VerticalAlignment="Top" Width="224"/>
+        <TextBlock x:Name="longBlock" HorizontalAlignment="Left" Margin="167,73,0,0" TextWrapping="Wrap" Text="Longitude:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="111" Margin="10,10,0,0" VerticalAlignment="Top" Width="126"/>
 
     </Grid>
 </Window>
