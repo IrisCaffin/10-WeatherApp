@@ -38,38 +38,50 @@ namespace _10_WeatherApp
 
         private void searchButton_Click(object sender, RoutedEventArgs e)
         {
-            ConditionsResults Weather = new ConditionsResults();
-            Weather = WeatherService.GetWeatherFor(zipcodeEntryBox.Text);
-            cityBlock.Text = Weather.Display_Location.full;
+            try
+            {
 
-            
-            latBlock.Text = "Latitude: " + Weather.Display_Location.latitude;
 
-            longBlock.Text = "Longiture: " + Weather.Display_Location.longitude;
+                ConditionsResults Weather = new ConditionsResults();
+                Weather = WeatherService.GetWeatherFor(zipcodeEntryBox.Text);
+                cityBlock.Text = Weather.Display_Location.full;
 
-            elevationBlock.Text = "Elevation: " + Weather.Display_Location.elevation;
 
-            weatherBlock.Text = Weather.weather;
+                latBlock.Text = "Latitude: " + Weather.Display_Location.latitude;
 
-            temperatureBlock.Text = "Temperature: " + Weather.temperature_string;
+                longBlock.Text = "Longiture: " + Weather.Display_Location.longitude;
 
-            humidityBlock.Text = "Humidity: " + Weather.relative_humidity;
+                elevationBlock.Text = "Elevation: " + Weather.Display_Location.elevation;
 
-            windBlock.Text = "Wind: " + Weather.wind_string;
+                weatherBlock.Text = Weather.weather;
 
-            visibilityBlock.Text = "Visibility: " + Weather.visibility_mi;
+                temperatureBlock.Text = "Temperature: " + Weather.temperature_string;
 
-            uvBlock.Text = "UV: " + Weather.UV;
+                humidityBlock.Text = "Humidity: " + Weather.relative_humidity;
 
-            feelsLikeBlock.Text = "Feels like: " + Weather.feelslike_string;
+                windBlock.Text = "Wind: " + Weather.wind_string;
 
-            precepBlock.Text = "Precipitation: " + Weather.precip_today_string;
+                visibilityBlock.Text = "Visibility: " + Weather.visibility_mi;
 
-            lastUpdateBlock.Text = Weather.observation_time;
+                uvBlock.Text = "UV: " + Weather.UV;
 
-           
+                feelsLikeBlock.Text = "Feels like: " + Weather.feelslike_string;
 
-            image.Source = new BitmapImage(new Uri(Weather.icon_url));
+                precepBlock.Text = "Precipitation: " + Weather.precip_today_string;
+
+                lastUpdateBlock.Text = Weather.observation_time;
+
+
+
+                image.Source = new BitmapImage(new Uri(Weather.icon_url));
+            }
+            catch
+            {
+
+                MessageBox.Show("Please enter a valid zip code.");
+                zipcodeEntryBox.Clear();
+
+            }
         }
     }
 }

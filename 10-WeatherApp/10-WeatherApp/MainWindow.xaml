@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_10_WeatherApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="MainWindow" Height="350" Width="525" ResizeMode="NoResize">
+    <Grid Background="#FF61CD6F">
         <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" Margin="406,65,0,0" VerticalAlignment="Top" Width="75" Click="searchButton_Click"/>
         <TextBox x:Name="zipcodeEntryBox" HorizontalAlignment="Left" Height="23" Margin="361,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock x:Name="cityBlock" HorizontalAlignment="Left" Margin="167,23,0,0" TextWrapping="Wrap" Text="City/State:" VerticalAlignment="Top" Height="22" Width="132" FontWeight="Bold"/>
