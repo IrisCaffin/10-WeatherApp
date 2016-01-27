@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:_10_WeatherApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" ResizeMode="NoResize">
-    <Grid Background="#FF61CD6F">
+    <Grid Background="#FF61CD6F" Margin="-1,0,1,0">
         <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" Margin="406,65,0,0" VerticalAlignment="Top" Width="75" Click="searchButton_Click"/>
         <TextBox x:Name="zipcodeEntryBox" HorizontalAlignment="Left" Height="23" Margin="361,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock x:Name="cityBlock" HorizontalAlignment="Left" Margin="167,23,0,0" TextWrapping="Wrap" Text="City/State:" VerticalAlignment="Top" Height="22" Width="132" FontWeight="Bold"/>
@@ -14,13 +14,13 @@
         <TextBlock x:Name="latBlock" HorizontalAlignment="Left" Margin="167,47,0,0" TextWrapping="Wrap" Text="Latitude:" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBlock x:Name="weatherBlock" HorizontalAlignment="Left" Margin="11,121,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="126" FontWeight="Bold"/>
         <TextBlock x:Name="elevationBlock" HorizontalAlignment="Left" Margin="167,97,0,0" TextWrapping="Wrap" Text="Elevation:" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="temperatureBlock" HorizontalAlignment="Left" Margin="92,166,0,0" TextWrapping="Wrap" Text="Temperature:" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="feelsLikeBlock" HorizontalAlignment="Left" Margin="92,193,0,0" TextWrapping="Wrap" Text="Feels like:" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="windBlock" HorizontalAlignment="Left" Margin="92,219,0,0" TextWrapping="Wrap" Text="Wind:" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="humidityBlock" HorizontalAlignment="Left" Margin="315,171,0,0" TextWrapping="Wrap" Text="Humidity:" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="visibilityBlock" HorizontalAlignment="Left" Margin="315,196,0,0" TextWrapping="Wrap" Text="Visibility:" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="uvBlock" HorizontalAlignment="Left" Margin="315,222,0,0" TextWrapping="Wrap" Text="UV:" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBlock x:Name="precepBlock" HorizontalAlignment="Left" Margin="91,247,0,0" TextWrapping="Wrap" Text="Precipitation:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="temperatureBlock" HorizontalAlignment="Left" Margin="70,166,0,0" TextWrapping="Wrap" Text="Temperature:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="feelsLikeBlock" HorizontalAlignment="Left" Margin="70,193,0,0" TextWrapping="Wrap" Text="Feels like:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="windBlock" HorizontalAlignment="Left" Margin="70,251,0,0" TextWrapping="Wrap" Text="Wind:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="humidityBlock" HorizontalAlignment="Left" Margin="322,171,0,0" TextWrapping="Wrap" Text="Humidity:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="visibilityBlock" HorizontalAlignment="Left" Margin="322,196,0,0" TextWrapping="Wrap" Text="Visibility:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="uvBlock" HorizontalAlignment="Left" Margin="322,222,0,0" TextWrapping="Wrap" Text="UV:" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock x:Name="precepBlock" HorizontalAlignment="Left" Margin="70,222,0,0" TextWrapping="Wrap" Text="Precipitation:" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBlock x:Name="lastUpdateBlock" HorizontalAlignment="Left" Margin="275,293,0,0" TextWrapping="Wrap" Text="Last update:" VerticalAlignment="Top" Width="224"/>
         <TextBlock x:Name="longBlock" HorizontalAlignment="Left" Margin="167,73,0,0" TextWrapping="Wrap" Text="Longitude:" VerticalAlignment="Top" FontWeight="Bold"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="111" Margin="10,10,0,0" VerticalAlignment="Top" Width="126"/>
